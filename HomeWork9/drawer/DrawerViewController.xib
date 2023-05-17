@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DrawerViewController" customModule="HomeWork9" customModuleProvider="target">
+            <connections>
+                <outlet property="constraintVertical" destination="HWL-xg-rQV" id="xDQ-z3-fzu"/>
+                <outlet property="drawerView" destination="i5M-Pr-FkT" id="OF0-5P-Ogs"/>
+                <outlet property="tileView" destination="OAn-TL-y95" id="ove-nw-Yzb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4eN-2V-P09" customClass="TileView" customModule="HomeWork9" customModuleProvider="target">
+                    <rect key="frame" x="145.66666666666666" y="336" width="60" height="60"/>
+                    <color key="backgroundColor" red="0.96567225769999998" green="1" blue="0.9125583035" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="4eN-2V-P09" secondAttribute="height" multiplier="1:1" id="Anx-xV-6cA"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="msD-2j-wKG" customClass="TileView" customModule="HomeWork9" customModuleProvider="target">
+                    <rect key="frame" x="145.66666666666666" y="396" width="60" height="60"/>
+                    <color key="backgroundColor" red="0.96567225769999998" green="1" blue="0.9125583035" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="msD-2j-wKG" secondAttribute="height" multiplier="1:1" id="fgp-3d-QDM"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OAn-TL-y95" customClass="TileView" customModule="HomeWork9" customModuleProvider="target">
+                    <rect key="frame" x="205.66666666666666" y="396" width="59.999999999999972" height="60"/>
+                    <color key="backgroundColor" red="0.96567225769999998" green="1" blue="0.9125583035" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="OAn-TL-y95" secondAttribute="height" multiplier="1:1" id="AaO-ww-fJ6"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhN-bN-uy5" customClass="TileView" customModule="HomeWork9" customModuleProvider="target">
+                    <rect key="frame" x="145.66666666666666" y="276" width="60" height="60"/>
+                    <color key="backgroundColor" red="0.9656722577137099" green="1" blue="0.91255830349867539" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="fhN-bN-uy5" secondAttribute="height" multiplier="1:1" id="88w-bP-zsD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.91158367902958559" green="0.93767953035215545" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fhN-bN-uy5" firstAttribute="centerX" secondItem="4eN-2V-P09" secondAttribute="centerX" id="1k1-ju-Fpt"/>
+                <constraint firstItem="msD-2j-wKG" firstAttribute="top" secondItem="4eN-2V-P09" secondAttribute="bottom" id="4Mg-x7-znR"/>
+                <constraint firstItem="msD-2j-wKG" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.152672" id="F2m-kL-bhE"/>
+                <constraint firstItem="4eN-2V-P09" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.152672" id="Flw-o7-5xw"/>
+                <constraint firstItem="OAn-TL-y95" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="HWL-xg-rQV"/>
+                <constraint firstItem="fhN-bN-uy5" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.152672" id="IvI-a9-sll"/>
+                <constraint firstItem="msD-2j-wKG" firstAttribute="centerY" secondItem="OAn-TL-y95" secondAttribute="centerY" id="OQt-bb-otM"/>
+                <constraint firstItem="OAn-TL-y95" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.152672" id="XEx-OF-cLT"/>
+                <constraint firstItem="OAn-TL-y95" firstAttribute="leading" secondItem="msD-2j-wKG" secondAttribute="trailing" id="nTr-Sz-qzg"/>
+                <constraint firstItem="4eN-2V-P09" firstAttribute="top" secondItem="fhN-bN-uy5" secondAttribute="bottom" id="pwA-fq-ogi"/>
+                <constraint firstItem="4eN-2V-P09" firstAttribute="centerX" secondItem="msD-2j-wKG" secondAttribute="centerX" id="t3A-D4-DDA"/>
+                <constraint firstItem="OAn-TL-y95" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="1.2" id="ygm-Qk-IVY"/>
+            </constraints>
+            <point key="canvasLocation" x="35.877862595419849" y="-11.267605633802818"/>
+        </view>
+    </objects>
+</document>
